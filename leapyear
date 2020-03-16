@@ -1,0 +1,34 @@
+public static void main(String[] args) 
+{
+int yr;
+// We have used the Scanner class to take the input from the user
+Scanner sc = new Scanner(System.in);
+System.out.println(" Please enter the year you want to test ");
+yr = sc.nextInt();
+sc.close();
+boolean isLeapYear = false;
+//Checking the first and foremost condition of leap year
+if(yr % 4 == 0)
+{
+//Checking the second condition 
+if( yr % 100 == 0)
+{
+//Checking the third condition of the year 
+if ( yr % 400 == 0)
+isLeapYear = true;
+else
+isLeapYear = false;
+}
+else
+isLeapYear = true;
+}
+else {
+isLeapYear = false;
+}
+//Final checking the value of boolean variable isLeapYear
+if(isLeapYear == true)
+System.out.println("Given Year is a Leap Year");
+else
+System.out.println("Given year is not a Leap Year");
+}
+}
