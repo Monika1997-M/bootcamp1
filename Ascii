@@ -1,0 +1,16 @@
+package BootCamp;
+public class Asciilowercase
+{
+	//main
+	    public static void main(String args[])
+	    {
+	    	int i;
+	        // starting for loop
+	        for(i = 0; i < 26; i++)
+	     	{
+	        	//printing the ASCII values in lower case
+	   	 	System.out.println((char)('a'+i) + " " + ('a'+i));
+	      	       
+	         }
+	    }
+}
