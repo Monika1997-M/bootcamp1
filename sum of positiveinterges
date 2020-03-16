@@ -1,0 +1,27 @@
+package BootCamp;
+import java.util.Scanner;
+public class Positiveintegers
+{
+public static void main(String agrs[])
+{
+//initialize the value of sum of positive numbers
+	int sum=0;
+	int[]num=new int[5];
+	//take the input from console/keyboard
+	Scanner sc=new Scanner(System.in);
+	for(int i=0;i<5;i++)//loop
+	{
+		num[i]=sc.nextInt();
+	}
+	for (int k:num)//loop
+	{
+		if(k>0)//condition
+		{
+			sum=sum+k;
+		}
+		}//print the sum of positive numbers
+			System.out.println("Sume of all positive numbers:" + sum);
+		
+}
+}
+
