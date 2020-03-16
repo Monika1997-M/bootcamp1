@@ -1,0 +1,21 @@
+package BootCamp;
+import java.util.Scanner;
+public class YearsWeeksDays
+{
+	/* take the input from keyboard and display in console*/
+	public static void main(String args[])//main
+	{
+	/* take the input from keyboard and display in console*/
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter days:");
+	int days=sc.nextInt();
+	/*conversion of years,days and weeks*/
+		int years=(days / 365);
+		int weeks=(days % 365)/7;
+		days=(days%365)%7;
+	/*print total years,weeks and days*/
+		System.out.println("years= "+years);
+		System.out.println("weeks=" +weeks);
+		System.out.println("days=" +days);
+}
+}
